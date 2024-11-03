@@ -1,0 +1,241 @@
+/* rem and em do NOT depend on html font-size in media queries! Instead, 1rem = 1em = 16px */
+
+/**************************/
+/* BELOW 1344px (Smaller desktops) */
+/**************************/
+
+@media (max-width: 84em) {
+  .hero {
+    max-width: 120rem;
+  }
+
+  .heading-primary {
+    font-size: 4.4rem;
+  }
+}
+
+/**************************/
+/* BELOW 1200px (Landscape Tablets) */
+/**************************/
+
+@media (max-width: 75em) {
+  .birthday-text {
+    font-size: 7em;
+  }
+  .birthday-text1 {
+    visibility: hidden;
+  }
+}
+
+/**************************/
+/* BELOW 944px (Tablets) */
+/**************************/
+
+@media (max-width: 59em) {
+  .birthday-text {
+    font-size: 10em;
+  }
+  .birthday-text1 {
+    visibility: hidden;
+  }
+  .gallery {
+    grid-template-columns: 1fr; /* Single-column layout */
+    grid-template-rows: auto; /* Allow rows to expand as needed */
+    grid-gap: 1rem; /* Smaller gap for mobile */
+  }
+
+  .gallery__item--1,
+  .gallery__item--2,
+  .gallery__item--3,
+  .gallery__item--4,
+  .gallery__item--5,
+  .gallery__item--6,
+  .gallery__item--7,
+  .gallery__item--8,
+  .gallery__item--9,
+  .gallery__item--10,
+  .gallery__item--11,
+  .gallery__item--12,
+  .gallery__item--13,
+  .gallery__item--14,
+  .gallery__item--15,
+  .gallery__item--16,
+  .gallery__item--17,
+  .gallery__item--18,
+  .gallery__item--19,
+  .gallery__item--20,
+  .gallery__item--21,
+  .gallery__item--22,
+  .gallery__item--23,
+  .gallery__item--24,
+  .gallery__item--25,
+  .gallery__item--26,
+  .gallery__item--27 {
+    grid-column: 1 / -1; /* Span entire row */
+    grid-row: auto; /* Stack items vertically */
+  }
+}
+
+/**************************/
+/* BELOW 704px (Smaller tablets) */
+/**************************/
+
+@media (max-width: 44em) {
+  .birthday-text {
+    font-size: 2em;
+  }
+  .birthday-text1 {
+    visibility: hidden;
+  }
+  .gallery {
+    grid-template-columns: 1fr; /* Single-column layout */
+    grid-template-rows: auto; /* Allow rows to expand as needed */
+    grid-gap: 1rem; /* Smaller gap for mobile */
+  }
+
+  .gallery__item--1,
+  .gallery__item--2,
+  .gallery__item--3,
+  .gallery__item--4,
+  .gallery__item--5,
+  .gallery__item--6,
+  .gallery__item--7,
+  .gallery__item--8,
+  .gallery__item--9,
+  .gallery__item--10,
+  .gallery__item--11,
+  .gallery__item--12,
+  .gallery__item--13,
+  .gallery__item--14,
+  .gallery__item--15,
+  .gallery__item--16,
+  .gallery__item--17,
+  .gallery__item--18,
+  .gallery__item--19,
+  .gallery__item--20,
+  .gallery__item--21,
+  .gallery__item--22,
+  .gallery__item--23,
+  .gallery__item--24,
+  .gallery__item--25,
+  .gallery__item--26,
+  .gallery__item--27 {
+    grid-column: 1 / -1; /* Span entire row */
+    grid-row: auto; /* Stack items vertically */
+  }
+}
+
+/**************************/
+/* BELOW 544px (Phones) */
+/**************************/
+
+@media (max-width: 34em) {
+  .section-hero {
+    padding: 2.4rem 0 6.4rem 0;
+  }
+
+  .birthday-text {
+    font-size: 7em;
+  }
+  .birthday-text1 {
+    visibility: hidden;
+  }
+
+  .gallery {
+    grid-template-columns: 1fr; /* Single-column layout */
+    grid-template-rows: auto; /* Allow rows to expand as needed */
+    grid-gap: 1rem; /* Smaller gap for mobile */
+  }
+
+  .gallery__item--1,
+  .gallery__item--2,
+  .gallery__item--3,
+  .gallery__item--4,
+  .gallery__item--5,
+  .gallery__item--6,
+  .gallery__item--7,
+  .gallery__item--8,
+  .gallery__item--9,
+  .gallery__item--10,
+  .gallery__item--11,
+  .gallery__item--12,
+  .gallery__item--13,
+  .gallery__item--14,
+  .gallery__item--15,
+  .gallery__item--16,
+  .gallery__item--17,
+  .gallery__item--18,
+  .gallery__item--19,
+  .gallery__item--20,
+  .gallery__item--21,
+  .gallery__item--22,
+  .gallery__item--23,
+  .gallery__item--24,
+  .gallery__item--25,
+  .gallery__item--26,
+  .gallery__item--27 {
+    grid-column: 1 / -1; /* Span entire row */
+    grid-row: auto; /* Stack items vertically */
+  }
+}
+
+/* 
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+*/
+
+/**************************/
+/* Fixing Safari flexbox gap */
+/**************************/
+
+.no-flexbox-gap .main-nav-list li:not(:last-child) {
+  margin-right: 4.8rem;
+}
+
+.no-flexbox-gap .list-item:not(:last-child) {
+  margin-bottom: 1.6rem;
+}
+
+.no-flexbox-gap .list-icon:not(:last-child) {
+  margin-right: 1.6rem;
+}
+
+.no-flexbox-gap .delivered-faces {
+  margin-right: 1.6rem;
+}
+
+.no-flexbox-gap .meal-attribute:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+.no-flexbox-gap .meal-icon {
+  margin-right: 1.6rem;
+}
+
+.no-flexbox-gap .footer-row div:not(:last-child) {
+  margin-right: 6.4rem;
+}
+
+.no-flexbox-gap .social-links li:not(:last-child) {
+  margin-right: 2.4rem;
+}
+
+.no-flexbox-gap .footer-nav li:not(:last-child) {
+  margin-bottom: 2.4rem;
+}
+
+@media (max-width: 75em) {
+  .no-flexbox-gap .main-nav-list li:not(:last-child) {
+    margin-right: 3.2rem;
+  }
+}
+
+@media (max-width: 59em) {
+  .no-flexbox-gap .main-nav-list li:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 4.8rem;
+  }
+}
